@@ -1,12 +1,7 @@
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <footer className="bg-foreground text-white">
@@ -34,36 +29,36 @@ const Footer = () => {
           <div className="flex flex-col items-center">
             <h3 className="font-semibold mb-4 text-lg">Quick Links</h3>
             <nav className="flex flex-col gap-2 text-center">
-              <button 
-                onClick={() => scrollToSection('home')}
+              <Link 
+                to="/"
                 className="text-gray-300 hover:text-primary transition-colors"
               >
                 Home
-              </button>
-              <button 
-                onClick={() => scrollToSection('about')}
+              </Link>
+              <Link 
+                to="/about"
                 className="text-gray-300 hover:text-primary transition-colors"
               >
                 About
-              </button>
-              <button 
-                onClick={() => scrollToSection('services')}
+              </Link>
+              <Link 
+                to="/services"
                 className="text-gray-300 hover:text-primary transition-colors"
               >
                 Services
-              </button>
-              <button 
-                onClick={() => scrollToSection('testimonials')}
+              </Link>
+              <Link 
+                to="/testimonials"
                 className="text-gray-300 hover:text-primary transition-colors"
               >
                 Testimonials
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              </Link>
+              <Link 
+                to="/contact"
                 className="text-gray-300 hover:text-primary transition-colors"
               >
                 Contact
-              </button>
+              </Link>
             </nav>
           </div>
 

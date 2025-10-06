@@ -1,0 +1,133 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
+import { Star } from "lucide-react";
+
+const Testimonials = () => {
+  const testimonials = [
+    {
+      textAr: "خدمة ممتازة وفريق محترف. ساعدونا في تحسين معدلات الإشغال بنسبة 40% خلال ستة أشهر فقط.",
+      textEn: "Excellent service and professional team. They helped us improve occupancy rates by 40% in just six months.",
+      author: "أحمد السعيد",
+      authorEn: "Ahmed Al-Saeed",
+      hotel: "فندق النخيل الذهبي",
+      rating: 5
+    },
+    {
+      textAr: "تعاملنا معهم لمدة عام كامل، والنتائج كانت أكثر من رائعة. التسويق الرقمي وإدارة وسائل التواصل كانت احترافية جداً.",
+      textEn: "We worked with them for a full year, and the results were more than amazing. Digital marketing and social media management were very professional.",
+      author: "فاطمة محمد",
+      authorEn: "Fatima Mohammed",
+      hotel: "منتجع البحر الأزرق",
+      rating: 5
+    },
+    {
+      textAr: "فريق محترف يفهم احتياجات الفنادق بشكل عميق. ساعدونا في تطوير استراتيجية تسويقية ناجحة.",
+      textEn: "Professional team that deeply understands hotel needs. They helped us develop a successful marketing strategy.",
+      author: "خالد العتيبي",
+      authorEn: "Khaled Al-Otaibi",
+      hotel: "فندق الواحة",
+      rating: 5
+    },
+    {
+      textAr: "التعاون معهم كان تجربة رائعة. النتائج ملموسة والدعم مستمر.",
+      textEn: "Working with them was a wonderful experience. Results are tangible and support is continuous.",
+      author: "سارة الأحمد",
+      authorEn: "Sara Al-Ahmad",
+      hotel: "فندق المدينة",
+      rating: 5
+    },
+    {
+      textAr: "استراتيجيات تسويقية مبتكرة وفعالة. زادت حجوزاتنا المباشرة بشكل ملحوظ.",
+      textEn: "Innovative and effective marketing strategies. Our direct bookings increased significantly.",
+      author: "محمد الشمري",
+      authorEn: "Mohammed Al-Shammari",
+      hotel: "منتجع الجبل",
+      rating: 5
+    },
+    {
+      textAr: "خدمة عملاء ممتازة واستجابة سريعة لجميع استفساراتنا. ننصح بالتعامل معهم بشدة.",
+      textEn: "Excellent customer service and quick response to all our inquiries. We highly recommend working with them.",
+      author: "نورة القحطاني",
+      authorEn: "Noura Al-Qahtani",
+      hotel: "فندق النجوم",
+      rating: 5
+    }
+  ];
+
+  return (
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        {/* Hero Banner */}
+        <section className="section-padding bg-gradient-to-br from-primary/10 to-primary/5">
+          <div className="container-custom text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4" dir="rtl">آراء عملائنا</h1>
+            <p className="text-xl text-muted-foreground">Client Testimonials</p>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto" dir="rtl">
+              اكتشف ما يقوله عملاؤنا عن تجربتهم معنا
+            </p>
+          </div>
+        </section>
+
+        {/* Testimonials Grid */}
+        <section className="section-padding">
+          <div className="container-custom">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {testimonials.map((testimonial, index) => (
+                <Card key={index} className="card-hover">
+                  <CardContent className="p-6">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    <p className="text-muted-foreground mb-4" dir="rtl">
+                      "{testimonial.textAr}"
+                    </p>
+                    <p className="text-sm text-muted-foreground mb-4 italic">
+                      "{testimonial.textEn}"
+                    </p>
+                    <div className="border-t pt-4">
+                      <p className="font-bold" dir="rtl">{testimonial.author}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.authorEn}</p>
+                      <p className="text-sm text-primary mt-1" dir="rtl">{testimonial.hotel}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            {/* Appreciation Letter Section */}
+            <Card className="mt-12 card-hover">
+              <CardContent className="p-8 text-center">
+                <h3 className="text-2xl font-bold mb-4" dir="rtl">
+                  خطابات شكر وتقدير رسمية
+                </h3>
+                <p className="text-muted-foreground mb-6" dir="rtl">
+                  نحتفظ بمجموعة من خطابات الشكر والتقدير الرسمية من عملائنا، وهي متاحة للاطلاع عند الطلب.
+                </p>
+                <p className="text-sm text-muted-foreground italic">
+                  Official letters of appreciation from our clients are available upon request.
+                </p>
+                <div className="mt-6 p-8 bg-muted/50 rounded-lg">
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="Sample Appreciation Letter"
+                    className="max-w-md mx-auto rounded shadow-lg"
+                  />
+                  <p className="text-sm text-muted-foreground mt-4">
+                    Sample appreciation letter from hotel partner
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Testimonials;

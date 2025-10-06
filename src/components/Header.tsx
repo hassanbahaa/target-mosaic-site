@@ -1,17 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
-    }
-  };
+  const closeMenu = () => setIsMenuOpen(false);
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-background shadow-sm z-50">
@@ -29,46 +27,45 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className="text-foreground hover:text-primary transition-colors"
+            <Link 
+              to="/"
+              className={`text-foreground hover:text-primary transition-colors ${isActive('/') ? 'text-primary font-semibold' : ''}`}
             >
               Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link 
+              to="/about"
+              className={`text-foreground hover:text-primary transition-colors ${isActive('/about') ? 'text-primary font-semibold' : ''}`}
             >
               About
-            </button>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link 
+              to="/services"
+              className={`text-foreground hover:text-primary transition-colors ${isActive('/services') ? 'text-primary font-semibold' : ''}`}
             >
               Services
-            </button>
-            <button 
-              onClick={() => scrollToSection('testimonials')}
-              className="text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link 
+              to="/testimonials"
+              className={`text-foreground hover:text-primary transition-colors ${isActive('/testimonials') ? 'text-primary font-semibold' : ''}`}
             >
               Testimonials
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link 
+              to="/contact"
+              className={`text-foreground hover:text-primary transition-colors ${isActive('/contact') ? 'text-primary font-semibold' : ''}`}
             >
               Contact
-            </button>
+            </Link>
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="btn-primary"
-            >
-              احجز استشارة
-            </Button>
+            <Link to="/contact">
+              <Button className="btn-primary">
+                احجز استشارة
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,42 +80,46 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-3">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
+            <Link 
+              to="/"
+              onClick={closeMenu}
+              className={`block w-full text-left py-2 text-foreground hover:text-primary transition-colors ${isActive('/') ? 'text-primary font-semibold' : ''}`}
             >
               Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link 
+              to="/about"
+              onClick={closeMenu}
+              className={`block w-full text-left py-2 text-foreground hover:text-primary transition-colors ${isActive('/about') ? 'text-primary font-semibold' : ''}`}
             >
               About
-            </button>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link 
+              to="/services"
+              onClick={closeMenu}
+              className={`block w-full text-left py-2 text-foreground hover:text-primary transition-colors ${isActive('/services') ? 'text-primary font-semibold' : ''}`}
             >
               Services
-            </button>
-            <button 
-              onClick={() => scrollToSection('testimonials')}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link 
+              to="/testimonials"
+              onClick={closeMenu}
+              className={`block w-full text-left py-2 text-foreground hover:text-primary transition-colors ${isActive('/testimonials') ? 'text-primary font-semibold' : ''}`}
             >
               Testimonials
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
+            </Link>
+            <Link 
+              to="/contact"
+              onClick={closeMenu}
+              className={`block w-full text-left py-2 text-foreground hover:text-primary transition-colors ${isActive('/contact') ? 'text-primary font-semibold' : ''}`}
             >
               Contact
-            </button>
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="btn-primary w-full"
-            >
-              احجز استشارة
-            </Button>
+            </Link>
+            <Link to="/contact" onClick={closeMenu}>
+              <Button className="btn-primary w-full">
+                احجز استشارة
+              </Button>
+            </Link>
           </div>
         )}
       </nav>
