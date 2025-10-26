@@ -96,8 +96,7 @@ const About = () => {
             </div>
           </div>
         </section>
-
-        {/* Team Members */}
+{/*         {/* Team Members 
         <section className="section-padding">
           <div className="container-custom">
             <div className="text-center mb-12">
@@ -127,6 +126,8 @@ const About = () => {
             </div>
           </div>
         </section>
+         */}
+
       </main>
       <Footer />
     </div>
