@@ -35,7 +35,7 @@ const Index = () => {
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="../src/assets/targetlogo.png" 
+                  src="targetlogo.png" 
                   alt="About Us"
                   className="w-full h-full object-cover"
                 />
