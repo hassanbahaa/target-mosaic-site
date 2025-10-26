@@ -134,4 +134,20 @@ All colors MUST be HSL.
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
+  
+  .platform-circle {
+    @apply w-32 h-32 rounded-full bg-background border-2 border-border flex items-center justify-center opacity-60 transition-all duration-300 ease-in-out shadow-md;
+  }
+
+  .platform-circle:hover {
+    @apply opacity-100 scale-105 shadow-lg;
+  }
+
+  .client-card {
+    @apply w-32 h-32 rounded-2xl bg-background border-2 border-border flex items-center justify-center opacity-60 transition-all duration-300 ease-in-out shadow-md;
+  }
+
+  .client-card:hover {
+    @apply opacity-100 scale-105 shadow-lg;
+  }
 }

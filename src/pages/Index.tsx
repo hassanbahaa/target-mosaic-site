@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
+import PlatformsSection from "@/components/PlatformsSection";
+import ClientsSection from "@/components/ClientsSection";
 import { Card, CardContent } from "@/components/ui/card";
 import { Hotel, TrendingUp, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -100,6 +102,12 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* Platforms Section */}
+        <PlatformsSection />
+
+        {/* Clients Section */}
+        <ClientsSection />
 
         {/* Testimonials Preview */}
         <section className="section-padding bg-primary/5">
