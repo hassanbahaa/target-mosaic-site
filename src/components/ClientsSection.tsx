@@ -34,7 +34,8 @@ const ClientsSection = () => {
             AutoScroll({
               playOnInit: true,
               speed: 0.8,
-              stopOnInteraction: false,
+              stopOnInteraction: true,
+              stopOnMouseEnter: true,
             }),
           ]}
           className="w-full"
@@ -46,11 +47,11 @@ const ClientsSection = () => {
                 className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5"
               >
                 <div className="flex items-center justify-center p-4">
-                  <div className="client-card group">
+                  <div className="client-card group overflow-hidden">
                     <img
                       src={client.logo}
                       alt={client.name}
-                      className="w-full h-full object-contain p-6"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </div>

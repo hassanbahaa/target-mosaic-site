@@ -1,10 +1,8 @@
-import { useEffect } from "react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 
 const platforms = [
@@ -16,11 +14,6 @@ const platforms = [
 ];
 
 const PlatformsSection = () => {
-  const [emblaRef] = useEmblaCarousel(
-    { loop: true, dragFree: true },
-    [AutoScroll({ playOnInit: true, speed: 1 })]
-  );
-
   return (
     <section className="section-padding bg-muted/30">
       <div className="container-custom">
@@ -42,7 +35,8 @@ const PlatformsSection = () => {
             AutoScroll({
               playOnInit: true,
               speed: 1,
-              stopOnInteraction: false,
+              stopOnInteraction: true,
+              stopOnMouseEnter: true,
             }),
           ]}
           className="w-full"
@@ -54,11 +48,11 @@ const PlatformsSection = () => {
                 className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5"
               >
                 <div className="flex items-center justify-center p-4">
-                  <div className="platform-circle group">
+                  <div className="platform-circle group overflow-hidden">
                     <img
                       src={platform.logo}
                       alt={platform.name}
-                      className="w-full h-full object-contain p-4"
+                      className="w-full h-full object-cover"
                       onError={(e) => {
                         e.currentTarget.src = "/placeholder.svg";
                       }}
