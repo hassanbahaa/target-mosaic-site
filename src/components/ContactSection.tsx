@@ -122,8 +122,8 @@ const ContactSection = () => {
                     البريد الإلكتروني
                   </h3>
                   <p className="text-muted-foreground">Email</p>
-                  <a href="mailto:info@targethotelmarketing.com" className="text-primary hover:underline">
-                    info@targethotelmarketing.com
+                  <a href="mailto:targethotelmarketing@gmail.com" className="text-primary hover:underline">
+                    targethotelmarketing@gmail.com
                   </a>
                 </div>
               </div>
@@ -140,7 +140,8 @@ const ContactSection = () => {
                   </h3>
                   <p className="text-muted-foreground">Phone</p>
                   <a href="tel:+966123456789" className="text-primary hover:underline">
-                    +966 12 345 6789
+                    +966 57 635 1714
+                    +20 10 916 11267
                   </a>
                 </div>
               </div>
@@ -157,10 +158,10 @@ const ContactSection = () => {
                   </h3>
                   <p className="text-muted-foreground">Address</p>
                   <p className="text-foreground" dir="rtl">
-                    الرياض، المملكة العربية السعودية
+                    القاهرة, جمهورية مصر العربية
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    Riyadh, Saudi Arabia
+                    Cairo, Egypt
                   </p>
                 </div>
               </div>
