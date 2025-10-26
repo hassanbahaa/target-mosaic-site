@@ -33,11 +33,11 @@ const Index = () => {
                   </Button>
                 </Link>
               </div>
-              <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
+<div className="relative h-96 rounded-lg overflow-hidden shadow-lg flex items-center justify-center bg-gray-100">
                 <img 
                   src="targetlogo.png" 
                   alt="About Us"
-                  className="w-full h-full object-cover"
+                 className="max-w-full max-h-full object-contain object-center"
                 />
               </div>
             </div>
