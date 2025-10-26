@@ -139,8 +139,11 @@ const ContactSection = () => {
                     الهاتف
                   </h3>
                   <p className="text-muted-foreground">Phone</p>
-                  <a href="tel:+966123456789" className="text-primary hover:underline">
+                  <a href="tel:+966576351714" className="text-primary hover:underline">
                     +966 57 635 1714
+                    +20 10 916 11267
+                  </a>
+                  <a href="tel:+201091611267" className="text-primary hover:underline">                  
                     +20 10 916 11267
                   </a>
                 </div>
