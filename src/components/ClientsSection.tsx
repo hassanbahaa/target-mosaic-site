@@ -34,7 +34,7 @@ const ClientsSection = () => {
             AutoScroll({
               playOnInit: true,
               speed: 0.8,
-              stopOnInteraction: true,
+              stopOnInteraction: false,
               stopOnMouseEnter: true,
             }),
           ]}

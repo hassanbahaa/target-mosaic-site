@@ -35,7 +35,7 @@ const PlatformsSection = () => {
             AutoScroll({
               playOnInit: true,
               speed: 1,
-              stopOnInteraction: true,
+              stopOnInteraction: false,
               stopOnMouseEnter: true,
             }),
           ]}
