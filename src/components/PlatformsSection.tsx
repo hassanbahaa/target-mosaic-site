@@ -4,11 +4,12 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 
+import bookingLogo from '../assets/websites/booking.png';
 
 import AutoScroll from "embla-carousel-auto-scroll";
 
 const platforms = [
-  { name: "Booking.com", logo: "../assets/websites/booking.png" },
+  { name: "Booking.com", logo:bookingLogo },
   { name: "Expedia", logo: "https://logo.clearbit.com/expedia.com" },
   { name: "Agoda", logo: "https://logo.clearbit.com/agoda.com" },
   { name: "TripAdvisor", logo: "https://logo.clearbit.com/tripadvisor.com" },
