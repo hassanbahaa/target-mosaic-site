@@ -36,7 +36,7 @@ const Index = () => {
               </div>
 <div className="relative h-96 rounded-lg overflow-hidden shadow-lg flex items-center justify-center bg-gray-100">
                 <img 
-                  src="{targetLogo}" 
+                  src={targetLogo} 
                   alt="About Us"
                  className="max-w-full max-h-full object-contain object-center"
                 />
