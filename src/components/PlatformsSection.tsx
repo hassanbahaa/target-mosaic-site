@@ -19,7 +19,7 @@ const platforms = [
   { name: "Expedia", logo: expediaLogo },
   { name: "Agoda", logo: agodaLogo },
   { name: "TripAdvisor", logo: tripadvisorLogo },
-  { name: "Airbnb", logo: airbnblogo },
+  { name: "Airbnb", logo: airbnbLogo },
   { name: "Almosafer", logo: almosaferLogo },
   { name: "Gathern", logo: gathernLogo },
 ];
