@@ -7,7 +7,10 @@ import {
 import bookingLogo from '../assets/websites/booking.png';
 import agodaLogo from '../assets/websites/agoda.png';
 import expediaLogo from '../assets/websites/expedia.png';
-
+import airbnbLogo from '../assets/websites/airbnb.png';
+import gathernLogo from '../assets/websites/gathern.png';
+import almosaferLogo from '../assets/websites/almosafer.png';
+import tripadvisorLogo from '../assets/websites/tripadvisor.png';
 
 import AutoScroll from "embla-carousel-auto-scroll";
 
@@ -15,8 +18,10 @@ const platforms = [
   { name: "Booking.com", logo:bookingLogo },
   { name: "Expedia", logo: expediaLogo },
   { name: "Agoda", logo: agodaLogo },
-  { name: "TripAdvisor", logo: "https://logo.clearbit.com/tripadvisor.com" },
-  { name: "Airbnb", logo: "https://logo.clearbit.com/airbnb.com" },
+  { name: "TripAdvisor", logo: tripadvisorLogo },
+  { name: "Airbnb", logo: airbnblogo },
+  { name: "Almosafer", logo: almosaferLogo },
+  { name: "Gathern", logo: gathernLogo },
 ];
 
 const PlatformsSection = () => {
