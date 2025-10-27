@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
+import targetLogo from '../assets/targetlogo.png';
 import PlatformsSection from "@/components/PlatformsSection";
 import ClientsSection from "@/components/ClientsSection";
 import { Card, CardContent } from "@/components/ui/card";
@@ -35,7 +36,7 @@ const Index = () => {
               </div>
 <div className="relative h-96 rounded-lg overflow-hidden shadow-lg flex items-center justify-center bg-gray-100">
                 <img 
-                  src="targetlogo.png" 
+                  src="{targetLogo}" 
                   alt="About Us"
                  className="max-w-full max-h-full object-contain object-center"
                 />
