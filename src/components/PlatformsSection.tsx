@@ -5,13 +5,16 @@ import {
 } from "@/components/ui/carousel";
 
 import bookingLogo from '../assets/websites/booking.png';
+import agodaLogo from '../assets/websites/agoda.png';
+import expediaLogo from '../assets/websites/expedia.png';
+
 
 import AutoScroll from "embla-carousel-auto-scroll";
 
 const platforms = [
   { name: "Booking.com", logo:bookingLogo },
-  { name: "Expedia", logo: "https://logo.clearbit.com/expedia.com" },
-  { name: "Agoda", logo: "https://logo.clearbit.com/agoda.com" },
+  { name: "Expedia", logo: expediaLogo },
+  { name: "Agoda", logo: agodaLogo },
   { name: "TripAdvisor", logo: "https://logo.clearbit.com/tripadvisor.com" },
   { name: "Airbnb", logo: "https://logo.clearbit.com/airbnb.com" },
 ];
