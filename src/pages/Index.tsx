@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
 import targetLogo from '../assets/targetlogo.png';
 import PlatformsSection from "@/components/PlatformsSection";
-import ClientsSection from "@/components/ClientsSection";
+// import ClientsSection from "@/components/ClientsSection";
 import { Card, CardContent } from "@/components/ui/card";
 import { Hotel, TrendingUp, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -107,8 +107,8 @@ const Index = () => {
         {/* Platforms Section */}
         <PlatformsSection />
 
-        {/* Clients Section */}
-        <ClientsSection />
+        {/* Clients section temporarily disabled */}
+        {/* <ClientsSection /> */}
 
         {/* Testimonials Preview */}
         <section className="section-padding bg-primary/5">
