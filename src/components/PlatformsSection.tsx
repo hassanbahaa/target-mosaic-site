@@ -24,6 +24,8 @@ const platforms = [
   { name: "Airbnb", logo: airbnbLogo },
   { name: "Almosafer", logo: almosaferLogo },
   { name: "Gathern", logo: gathernLogo },
+  { name: "Hotels", logo: hotelsLogo },
+  { name: "Vrbo", logo: vrboLogo },
 ];
 
 const PlatformsSection = () => {
