@@ -11,6 +11,8 @@ import airbnbLogo from '../assets/websites/airbnb.png';
 import gathernLogo from '../assets/websites/gathern.png';
 import almosaferLogo from '../assets/websites/almosafer.png';
 import tripadvisorLogo from '../assets/websites/tripadvisor.png';
+import hotelsLogo from '../assets/websites/hotels.png';
+import vrboLogo from '../assets/websites/vrbo.png';
 
 import AutoScroll from "embla-carousel-auto-scroll";
 
