@@ -127,10 +127,10 @@ const Index = () => {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4" dir="rtl">
-                    "خدمة ممتازة وفريق محترف. ساعدونا في تحسين معدلات الإشغال بنسبة 40% خلال ستة أشهر فقط."
+                    "شركة ممتازة و تقدم خدمات افضل, انصح بهم و بشدة اعمل معهم منذ 3 سنوات و الحمدلله."
                   </p>
-                  <p className="font-bold" dir="rtl">أحمد السعيد</p>
-                  <p className="text-sm text-primary" dir="rtl">فندق النخيل الذهبي</p>
+                  <p className="font-bold" dir="rtl">هاني عبد المحسن العمري</p>
+                  <p className="text-sm text-primary" dir="rtl">فندق كيان للاجنحة الفندقية جدة</p>
                 </CardContent>
               </Card>
 
