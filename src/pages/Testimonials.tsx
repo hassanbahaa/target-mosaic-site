@@ -6,19 +6,20 @@ import { Star } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      textAr: "خدمة ممتازة وفريق محترف. ساعدونا في تحسين معدلات الإشغال بنسبة 40% خلال ستة أشهر فقط.",
-      textEn: "Excellent service and professional team. They helped us improve occupancy rates by 40% in just six months.",
-      author: "أحمد السعيد",
-      authorEn: "Ahmed Al-Saeed",
-      hotel: "فندق النخيل الذهبي",
+      textAr: "بكل الود نهنئكم و نهنئ انفسنا بنجاح اول تعاون بيننا و نبارك جهودكم المثمرة خلف ذلك و عملكم بروح الفريق الواحد مما كلل جهود الجميع للوصول إلى ما نحن عليه اذ نأمل مواصلة جهودكم الكريمة للاستمرار و للأفضل ان شاء الله.",
+      textEn: "With all sincerity, we congratulate you — and ourselves — on the success of our first collaboration. We truly appreciate your fruitful efforts and your spirit of teamwork, which have led us all to this achievement. We look forward to your continued dedication and to achieving even greater success, God willing.
+",
+      author: "عبدربه إبراهيم الشيخي",
+      authorEn: "Abdur-Rabbuh Ibrahim Al-Sheikhi",
+      hotel: "مؤسسة دار لافينا",
       rating: 5
     },
     {
-      textAr: "تعاملنا معهم لمدة عام كامل، والنتائج كانت أكثر من رائعة. التسويق الرقمي وإدارة وسائل التواصل كانت احترافية جداً.",
+      textAr: "من افضل المؤسسات التي عملت معها, احترافية عالية في العمل و كذلك سرعة الاستجابة و التعاون و كذلك يتميزون بتنوع تسويق المنشأة على برامج متعددة لكسب عدد اكبر من النزلاء.",
       textEn: "We worked with them for a full year, and the results were more than amazing. Digital marketing and social media management were very professional.",
-      author: "فاطمة محمد",
+      author: "سلطان بن سعيد آل عون",
       authorEn: "Fatima Mohammed",
-      hotel: "منتجع البحر الأزرق",
+      hotel: "فندق كيان للاجنحة الفندقية ابها",
       rating: 5
     },
     {
