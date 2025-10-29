@@ -142,10 +142,10 @@ const Index = () => {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4" dir="rtl">
-                    "تعاملنا معهم لمدة عام كامل، والنتائج كانت أكثر من رائعة. التسويق الرقمي كان احترافي جداً."
+                    "شركة من افضل شركات التسويق حيث قامت برفع نسبة الاشغال في وقت قصير و على مدار 4 سنوات و احنا مستمرين معهم."
                   </p>
-                  <p className="font-bold" dir="rtl">فاطمة محمد</p>
-                  <p className="text-sm text-primary" dir="rtl">منتجع البحر الأزرق</p>
+                  <p className="font-bold" dir="rtl"> محمد</p>
+                  <p className="text-sm text-primary" dir="rtl">فندق برج بيات</p>
                 </CardContent>
               </Card>
             </div>
