@@ -15,9 +15,9 @@ const Testimonials = () => {
     },
     {
       textAr: "من افضل المؤسسات التي عملت معها, احترافية عالية في العمل و كذلك سرعة الاستجابة و التعاون و كذلك يتميزون بتنوع تسويق المنشأة على برامج متعددة لكسب عدد اكبر من النزلاء.",
-      textEn: "We worked with them for a full year, and the results were more than amazing. Digital marketing and social media management were very professional.",
+      textEn: "One of the best organizations I have worked with — highly professional, responsive, and cooperative. They also excel in diversifying the property's marketing across multiple platforms to attract a larger number of guests.",
       author: "سلطان بن سعيد آل عون",
-      authorEn: "Fatima Mohammed",
+      authorEn: "Sultan Bin Saeed Al-Aoun",
       hotel: "فندق كيان للاجنحة الفندقية ابها",
       rating: 5
     },
