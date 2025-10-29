@@ -22,11 +22,11 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      textAr: "فريق محترف يفهم احتياجات الفنادق بشكل عميق. ساعدونا في تطوير استراتيجية تسويقية ناجحة.",
-      textEn: "Professional team that deeply understands hotel needs. They helped us develop a successful marketing strategy.",
-      author: "خالد العتيبي",
-      authorEn: "Khaled Al-Otaibi",
-      hotel: "فندق الواحة",
+      textAr: "شركة ممتازة و تقدم خدمات افضل, انصح بهم و بشدة اعمل معهم منذ 3 سنوات و الحمد لله. هاني عبد المحسن العمري.",
+      textEn: "An excellent company that provides outstanding services. I highly recommend them — I've been working with them for three years, and thank God, the experience has been great.",
+      author: "هاني عبد المحسن العمري",
+      authorEn: "Hani Abdulmohsen Al-Omari",
+      hotel: "فندق كيان للاجنحة الفندقية جدة",
       rating: 5
     },
     {
