@@ -10,9 +10,9 @@ import {
 
 const testimonials = [
   {
-    text: "تعاوننا مع Target Hotel Marketing كان نقطة تحول حقيقية. ارتفعت نسبة الحجوزات بشكل ملحوظ خلال أشهر قليلة.",
+    text: "بكل الود نهنئكم و نهنئ انفسنا بنجاح اول تعاون بيننا و نبارك جهودكم المثمرة خلف ذلك و عملكم بروح الفريق الواحد مما كلل جهود الجميع للوصول إلى ما نحن عليه اذ نأمل مواصلة جهودكم الكريمة للاستمرار و للأفضل ان شاء الله.",
     textEn: "Our collaboration with Target Hotel Marketing was a real turning point. Booking rates increased significantly within a few months.",
-    author: "فندق الريتز - الرياض",
+    author: "مؤسسة دار لافينا",
     authorEn: "Ritz Hotel - Riyadh",
     rating: 5
   },
