@@ -7,8 +7,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       textAr: "بكل الود نهنئكم و نهنئ انفسنا بنجاح اول تعاون بيننا و نبارك جهودكم المثمرة خلف ذلك و عملكم بروح الفريق الواحد مما كلل جهود الجميع للوصول إلى ما نحن عليه اذ نأمل مواصلة جهودكم الكريمة للاستمرار و للأفضل ان شاء الله.",
-      textEn: "With all sincerity, we congratulate you — and ourselves — on the success of our first collaboration. We truly appreciate your fruitful efforts and your spirit of teamwork, which have led us all to this achievement. We look forward to your continued dedication and to achieving even greater success, God willing.
-",
+      textEn: "With all sincerity, we congratulate you — and ourselves — on the success of our first collaboration. We truly appreciate your fruitful efforts and your spirit of teamwork, which have led us all to this achievement. We look forward to your continued dedication and to achieving even greater success, God willing.",
       author: "عبدربه إبراهيم الشيخي",
       authorEn: "Abdur-Rabbuh Ibrahim Al-Sheikhi",
       hotel: "مؤسسة دار لافينا",
