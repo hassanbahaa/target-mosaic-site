@@ -22,7 +22,7 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      textAr: "شركة ممتازة و تقدم خدمات افضل, انصح بهم و بشدة اعمل معهم منذ 3 سنوات و الحمد لله. هاني عبد المحسن العمري.",
+      textAr: "شركة ممتازة و تقدم خدمات افضل, انصح بهم و بشدة اعمل معهم منذ 3 سنوات و الحمد لله.",
       textEn: "An excellent company that provides outstanding services. I highly recommend them — I've been working with them for three years, and thank God, the experience has been great.",
       author: "هاني عبد المحسن العمري",
       authorEn: "Hani Abdulmohsen Al-Omari",
