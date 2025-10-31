@@ -70,13 +70,15 @@ const Footer = () => {
             <p className="text-sm text-gray-400 mb-4">Follow Us</p>
             <div className="flex gap-4">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/profile.php?id=61553856831033" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
+
+              {/*
               <a 
                 href="https://twitter.com" 
                 target="_blank" 
@@ -85,14 +87,17 @@ const Footer = () => {
               >
                 <Twitter className="w-5 h-5" />
               </a>
+              */}
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/target_hotel_marketing" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
+
+              {/*
               <a 
                 href="https://linkedin.com" 
                 target="_blank" 
@@ -101,13 +106,14 @@ const Footer = () => {
               >
                 <Linkedin className="w-5 h-5" />
               </a>
+              */}
               <a 
-                href="https://youtube.com" 
+                href="https://www.tiktok.com/@target.hotel.marketing" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
               >
-                <Youtube className="w-5 h-5" />
+                <Tiktok className="w-5 h-5" />
               </a>
             </div>
           </div>
