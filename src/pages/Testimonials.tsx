@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import lavina from '../assets/Testimonials/lavina.jpg';
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
@@ -112,7 +113,7 @@ const Testimonials = () => {
                 </p>
                 <div className="mt-6 p-8 bg-muted/50 rounded-lg">
                   <img 
-                    src="/placeholder.svg" 
+                    src={lavina}
                     alt="Sample Appreciation Letter"
                     className="max-w-md mx-auto rounded shadow-lg"
                   />
