@@ -30,27 +30,27 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      textAr: "التعاون معهم كان تجربة رائعة. النتائج ملموسة والدعم مستمر.",
-      textEn: "Working with them was a wonderful experience. Results are tangible and support is continuous.",
-      author: "سارة الأحمد",
-      authorEn: "Sara Al-Ahmad",
-      hotel: "فندق المدينة",
+      textAr: "ادارة ناجحة و عمل جماعي على اعلى مستوى, كنتم اضافة قوية لنا في زيادة المبيعات و جلب عدد كبير من العملاء الجدد.",
+      textEn: "Successful management and outstanding teamwork at the highest level.You were a strong addition to us in increasing sales and attracting a large number of new clients.",
+      author: "احمد عبد الستار",
+      authorEn: "Ahmed Abdul Sattar",
+      hotel: "جراند خيال جدة",
       rating: 5
     },
     {
-      textAr: "استراتيجيات تسويقية مبتكرة وفعالة. زادت حجوزاتنا المباشرة بشكل ملحوظ.",
-      textEn: "Innovative and effective marketing strategies. Our direct bookings increased significantly.",
-      author: "محمد الشمري",
-      authorEn: "Mohammed Al-Shammari",
-      hotel: "منتجع الجبل",
+      textAr: "تعتبر من افضل الشركات في التسويق من خلال متابعتهم للعمل و حسن التعامل مع العملاء و لازلنا مستمرين بالتعاون معهم.",
+      textEn: "One of the best marketing companies — distinguished by their follow-up, professionalism, and excellent customer relations.We are still continuing our collaboration with them.",
+      author: "محمد محسن الوادعي",
+      authorEn: "Mohammed Mohsen Al-Wad’i",
+      hotel: "فندق قصر الممشى",
       rating: 5
     },
     {
-      textAr: "خدمة عملاء ممتازة واستجابة سريعة لجميع استفساراتنا. ننصح بالتعامل معهم بشدة.",
-      textEn: "Excellent customer service and quick response to all our inquiries. We highly recommend working with them.",
-      author: "نورة القحطاني",
-      authorEn: "Noura Al-Qahtani",
-      hotel: "فندق النجوم",
+      textAr: "لكم منا كل الاحترام و التقدير على الجهود المبذول في التسويق و تقدم سير العمل و حسن التعامل مع المنشأة و مع العملاء .",
+      textEn: "You have our utmost respect and appreciation for your dedicated efforts in marketing, the progress of operations, and your excellent professionalism in dealing with both the establishment and the clients.",
+      author: "المدير",
+      authorEn: "Manager",
+      hotel: "فندق أمواج الجبيل",
       rating: 5
     }
   ];
