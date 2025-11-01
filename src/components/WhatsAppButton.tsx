@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const WhatsAppButton = () => {
   const [showTooltip, setShowTooltip] = useState(true);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,9 +20,8 @@ const WhatsAppButton = () => {
         className={`bg-white text-foreground px-4 py-2 rounded-lg shadow-lg transition-all duration-300 whitespace-nowrap ${
           showTooltip ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
         }`}
-        dir="rtl"
       >
-        <p className="text-sm font-medium">تواصل معنا عبر واتساب</p>
+        <p className="text-sm font-medium">{t('whatsapp.tooltip')}</p>
         <div className="absolute -bottom-1 right-6 w-3 h-3 bg-white transform rotate-45"></div>
       </div>
 

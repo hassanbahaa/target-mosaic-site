@@ -4,6 +4,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import AutoScroll from "embla-carousel-auto-scroll";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const clients = [
   { name: "Golden Palm Hotel", logo: "/placeholder.svg" },
@@ -15,14 +16,16 @@ const clients = [
 ];
 
 const ClientsSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="section-padding">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" dir="rtl">
-            عملاؤنا
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            {t('clients.title')}
           </h2>
-          <p className="text-xl text-muted-foreground">Our Clients</p>
+          <p className="text-xl text-muted-foreground">{t('clients.subtitle')}</p>
         </div>
 
         <Carousel
