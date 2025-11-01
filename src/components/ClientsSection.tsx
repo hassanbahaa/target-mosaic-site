@@ -19,7 +19,7 @@ const ClientsSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="section-padding">
+    <section className="section-padding" dir="ltr">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

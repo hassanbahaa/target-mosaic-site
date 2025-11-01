@@ -14,14 +14,14 @@ const WhatsAppButton = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex flex-col items-end gap-2">
+    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex flex-col items-end gap-2" dir="ltr">
       {/* Tooltip */}
       <div
         className={`bg-white text-foreground px-4 py-2 rounded-lg shadow-lg transition-all duration-300 whitespace-nowrap ${
           showTooltip ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
         }`}
       >
-        <p className="text-sm font-medium">{t('whatsapp.tooltip')}</p>
+        <p className="text-sm font-medium" dir="rtl">{t('whatsapp.tooltip')}</p>
         <div className="absolute -bottom-1 right-6 w-3 h-3 bg-white transform rotate-45"></div>
       </div>
 
