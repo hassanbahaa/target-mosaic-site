@@ -55,7 +55,7 @@ const ClientsSection = () => {
                       <img
                         src={`/src/assets/hotels/${hotel.id}.jpg`}
                         onError={(e) => {
-                          e.currentTarget.src = "/src/assets/hotels/placeholder.jpg";
+                          e.currentTarget.src = "/src/assets/hotels/placeholder.svg";
                         }}
                         alt={hotel.name}
                         className="w-full h-full object-cover object-center opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
