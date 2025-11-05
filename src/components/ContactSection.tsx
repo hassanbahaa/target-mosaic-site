@@ -47,7 +47,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" action="https://formsubmit.co/targethotelmarketing@gmail.com" method="POST" >
                 <div>
                   <label className="block text-sm font-medium mb-2 text-foreground" dir="rtl">
                     الاسم / Name
