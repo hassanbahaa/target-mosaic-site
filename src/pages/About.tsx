@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Users, Target, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import targetLogo from "@/assets/targetlogo.png";
 
 const About = () => {
   const teamMembers = [
@@ -53,11 +54,11 @@ const About = () => {
                   نعمل مع مجموعة متنوعة من الفنادق والمنتجعات، ونقدم لهم استراتيجيات مخصصة تساعدهم على تحقيق أهدافهم التجارية وزيادة إيراداتهم.
                 </p>
               </div>
-              <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-96 rounded-lg overflow-hidden shadow-lg flex items-center justify-center bg-gray-100">
                 <img 
-                  src="/placeholder.svg" 
+                  src={targetLogo} 
                   alt="Our Story"
-                  className="w-full h-full object-cover"
+                  className="max-w-full max-h-full object-contain object-center"
                 />
               </div>
             </div>
