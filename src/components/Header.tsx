@@ -25,7 +25,7 @@ const Header = () => {
               alt="Target Hotel Marketing Logo" 
               className="h-12 w-auto object-contain transition-all duration-300 group-hover:opacity-80 group-hover:scale-105"
             />
-            <div className="text-lg font-semibold text-foreground hidden sm:block">
+            <div className="text-sm sm:text-base md:text-lg font-semibold text-foreground">
               Target Hotel Marketing
             </div>
           </Link>
