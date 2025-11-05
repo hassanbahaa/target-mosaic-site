@@ -3,6 +3,7 @@ import { Menu, Languages } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import targetLogo from "@/assets/targetlogo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,14 +19,16 @@ const Header = () => {
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">
-              T
-            </div>
+          <Link to="/" className="flex items-center gap-3 group">
+            <img 
+              src={targetLogo} 
+              alt="Target Hotel Marketing Logo" 
+              className="h-12 w-auto object-contain transition-all duration-300 group-hover:opacity-80 group-hover:scale-105"
+            />
             <div className="text-lg font-semibold text-foreground hidden sm:block">
               Target Hotel Marketing
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
