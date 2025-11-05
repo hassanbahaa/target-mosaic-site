@@ -42,15 +42,15 @@ const ClientsSection = () => {
                 className="pl-4 basis-full sm:basis-1/2 lg:basis-1/4"
               >
                 <div className="flex items-center justify-center p-4">
-                  <div className="text-center group transition-all">
-                    <div className="relative overflow-hidden rounded-xl shadow-md">
+                  <div className="flex flex-col items-center text-center group transition-all">
+                    <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 mx-auto overflow-hidden rounded-xl shadow-md">
                       <img
                         src={`/src/assets/hotels/${hotel.id}.jpg`}
                         onError={(e) => {
                           e.currentTarget.src = "/src/assets/hotels/placeholder.jpg";
                         }}
                         alt={hotel.name}
-                        className="w-40 h-40 mx-auto object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                        className="w-full h-full object-cover object-center opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
                       />
                     </div>
                     <h3 className="text-base font-semibold mt-3 break-words px-2">
