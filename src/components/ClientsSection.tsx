@@ -6,6 +6,14 @@ import {
 import { useLanguage } from "@/contexts/LanguageContext";
 import { hotels } from "@/data/hotels";
 import AutoScroll from "embla-carousel-auto-scroll";
+const countryToFlag = (countryCode: string): string => {
+  if (!countryCode) return "";
+  const code = countryCode.toUpperCase();
+  const OFFSET = 127397;
+  return Array.from(code)
+    .map((char: string) => String.fromCodePoint(char.charCodeAt(0) + OFFSET))
+    .join("");
+};
 
 const ClientsSection = () => {
   const { t } = useLanguage();
@@ -56,9 +64,13 @@ const ClientsSection = () => {
                     <h3 className="text-base font-semibold mt-3 break-words px-2">
                       {hotel.name}
                     </h3>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      {hotel.city} {hotel.flag}
-                    </p>
+<p
+  className="text-sm text-gray-500 text-center"
+  style={{ fontFamily: "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif" }}
+>
+  {hotel.city} {countryToFlag(hotel.flag)}
+</p>
+
                   </div>
                 </div>
               </CarouselItem>
